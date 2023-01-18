@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangcoding Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          nav a {
+            @apply text-nav hover:text-black font-raleway;
+          }
+
+          nav a.active {
+            @apply text-black;
+          }
+
+          .button-primary {
+            @apply bg-primary py-[12px] px-[30px] text-white rounded-full hover:bg-secondary;
+          }
+
+          .text-gradient {
+            background: linear-gradient(90.01deg, #E18700 35.24%, #FF32AD 66.21%, #0EC5D7 97.18%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+          }
+          .mxmy{
+            text-align: center;
+          }
+          .texts{
+            font-size: 18px;
+            font-weight: 700;
+          }
+          .gridservice{
+            box-shadow: 5px 5px 5px rgb(134, 156, 213);
+          }
+          .conwwd{
+            width: 300px;
+            height: 350px;
+            justify-content: center;
+            text-align: center;
+            margin: 0 20px;
+            background-color: rgb(253, 253, 253);
+          }
+          .bgwwd{
+            margin: 30px auto;
+            margin-top: 30px;
+            z-index: 10;
+          }
+          .logorel{
+            position: relative;
+          }
+          .anu{
+            display: flex;
+            flex-direction: row;
+          }
+          .anu:before,anu:after {
+            content: "";
+            flex: 1 1;
+            border-bottom: 2px solid #000;
+            margin: auto;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-header">
+        <section class="container mx-auto">
+            <section id="topbar" class="flex justify-between gap-10 items-center py-5">
+                <div id="left-side" class="flex gap-10 items-center">
+                    <img src="./Logo (1).png" alt="">
+                    <nav>
+                        <ul class="flex gap-5 items-center">
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Work</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="right-side" class="flex items-center gap-10">
+                    <button>
+                        <img src="./search.png" alt="">
+                    </button>
+                    <a href="#get-started" class="button-primary">Get Started</a>
+                </div>
+            </section>
+        </section>
+        <section id="hero" class="flex flex-col gap-5">
+            <div class="max-w-[700px] mx-auto mt-[100px]">
+                <h1 class="text-2xl lg:text-4xl xl:text-5xl text-center font-nunito font-bold">It's Fun To Build a Website With The <span class="text-gradient">Mangcoding Team</span></h1>
+                <p class="text-center py-5">
+                    The Mangcoding team will help build a website for your company with quality and guaranteed services, with custom templates you can create a website as you like.
+                </p>
+            </div>
+            <div class="action mx-auto flex justify-center items-center gap-10">
+                <a href="#get-started" class="button-primary">Get Started</a>
+                <a href="#" class="underline flex items-center gap-5 hover:no-underline">Explore our blog <img src="./Vector.png" alt=""></a>
+            </div>
+            <img src="./image 1.png" alt="" class="mx-auto">
+        </section>
+        <section id="trust" class="flex flex-col">
+            <h4 class="text-18px text-center mt-20 font-bold">Brands that trust us</h4>
+            <div class="part items-center flex mx-auto mt-[32px]" >
+                <img src="imagee 1.png" alt="" class="w-[104.8px] h-[40px] mr-[60px]">
+                <img src="image 2.png" alt="" class="w-[104.8px] h-[40px] mr-[60px]">
+                <img src="image 3.png" alt="" class="w-[104.8px] h-[40px] mr-[60px]">
+                <img src="image 4.png" alt="" class="w-[104.8px] h-[40px] mr-[60px]">
+                <img src="image 5.png" alt="" class="w-[104.8px] h-[40px] ">
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="services" class="items-center mt-[30px] pt-[50px] bg-gradient-to-r from-cyan-500 to-blue-500 ">
+            <h1 class="text-3xl font-bold mx-[120px]">Services </h1>
+            <a href="#" class="button-primary relative left-[80%]">Build Website</a>
+            <p class="mx-[120px]">Lörem ipsum patev antifili astrokålonat. Vanat aheten. Ekofiering makrora, på <br> Makrona tregät plang. Bekässade kast, eftersom sore. </p>
+            
+
+            <div class="grid grid-cols-3 gap-4 pb-[100px] mt-[51px] mx-[120px] py-[20px] ">
+                <div class="gridservice h-15 bg-white aspect-[2/1] ">
+                    <img src="shopify.png" alt="" class="mx-[35%] my-[10%]">
+                    <div class="mxmy">
+                        <h1 class="texts">Shopify Theme Development</h1>
+                        <p>Start from 700 USD for project base or 35 USD per hour</p>
+                    </div>
+                    
+
+                </div>
+                <div class="gridservice h-15 bg-white aspect-[2/1]">
+                    <img src="php.png" alt="" class="mx-[45%] my-[10%]">
+                    <div class="mxmy">
+                        <h1 class="texts">Web Application Development</h1>
+                        <p>Start from 1000 USD for project base or 35 USD per hour</p>
+                    </div>
+                    
+
+                </div>
+                <div class="gridservice h-15 bg-white aspect-[1/1.03]">
+                    <img src="asistans.png" alt="" class="mx-[35%] mt-[80px]">
+                    <div class="mxmy mt-[20px]">
+                        <h1 class="texts">Assistans Services</h1>
+                        <p>Start from 33 USD for project base or 35 USD per hour</p>
+                        <br><br><br><br>
+                        <p>More Services : </p>
+                        <br>
+                        <p class="texts">Technical Assistans <br>
+                            Support Assistans <br>
+                            VIP Assistans <br>
+                            Social Media Admin</p>
+                    </div>
+                    
+
+                </div>
+                <div class="gridservice h-15 bg-white aspect-[2/1] mt-[-268px]">
+                    <img src="wordpress-lockup logo.png" alt="" class="mx-[35%] my-[10%]">    
+                    <div class="mxmy">
+                        <h1 class="texts">WordPress Theme Development</h1>
+                        <p>Start from 600 USD for project base or 35 USD per hour</p>
+                    </div>
+
+
+                </div>
+                <div class="gridservice h-15 bg-white aspect-[2/1] mt-[-268px]">
+                    <img src="www.png" alt="" class="mx-[35%] my-[10%]">
+                    <div class="mxmy">
+                    <h1 class="texts">Custom App/Plugins Development</h1>
+                    <p>Start from 300 USD for project base or 35 USD per hour</p>
+                    
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="wwd p-[150px]">
+            <div class="text-center pb-[50px]">
+                <h1 class="text-3xl font-bold">What We Do</h1>
+                <br>
+                <p>Lörem ipsum patev antifili astrokålonat. Vanat aheten. Ekofiering makrora, på <br> trekavis. Makrona tregät plang. Bekässade kast, eftersom sore. </p>
+            </div>
+
+            
+            <h1 class="anu mb-20px"></h1>            
+            <div class="flex items-center justify-center">
+
+                <div class="conwwd">
+                    <img src="Frame 1921.png" alt="" class="bgwwd">
+                    <h1 class="texts">Design</h1>
+                    <p>Create Wireframe Display Designs <br> And Initial UI Designs For Websites</p>
+                </div>
+
+
+                <div class="conwwd">
+                    <img src="Frame 1922.png" alt="" class="bgwwd">
+                    <h1 class="texts">Front-end</h1>
+                    <p>Create Wireframe Display Designs <br> And Initial UI Designs For Websites</p>
+                </div>
+
+                
+                <div class="conwwd">
+                    <img src="Frame 1923.png" alt="" class="bgwwd">
+                    <h1 class="texts">Back-end</h1>
+                    <p>Create Wireframe Display Designs <br> And Initial UI Designs For Websites</p>
+                </div>
+                
+
+                <div class="conwwd">
+                    <img src="Frame 1924.png" alt="" class="bgwwd">
+                    <h1 class="texts">Check Test</h1>
+                    Create Wireframe Display Designs <br> And Initial UI Designs For Websites
+                </div>
+
+            </div>
+        </section>
+        
+        <section class="ow pt-[50px] pb-[150px]">
+
+            <div class="p text-center pb-[50px]">
+                <h1 class="text-3xl font-bold">Our Work</h1>
+                <br>
+                <p>Lörem ipsum patev antifili astrokålonat. Vanat aheten. Ekofiering makrora,</p>
+            </div>
+
+            <div class="r1 flex justify-center items-center">
+                <img src="r11.png" alt="" class="mr-[20px]">
+                
+                <img src="r12.png" alt="">
+            </div>
+            
+            <div class="r2 flex justify-center items-center">
+                <img src="r21.png" alt="" class="mr-[20px]">
+            
+                <img src="r22.png" alt="">
+            </div>
+
+        </section>
+
+        <section class="pb-[150px]">
+            <div class="wh text-center justify-center items-center">
+                <h1 class="text-3xl font-bold">What people say about <br>
+                    <span class="text-gradient">Mangcoding Team?</span> </h1>
+                <p class="pt-[20px] text-[32px]">“ It was a great experience to work with <br>
+                    Mangcoding, we love the details result, and <br>
+                    professionalism.“</p>
+                <br>
+                <img src="image 16.png" alt="" class="bgwwd">
+                <h1 class="text-l font-semibold">Riko Sapto Dimo</h1>
+                <p class="font-light">Managing Director Orely.co</p>
+            
+                <img src="bulatbulat.png" alt="" class="bgwwd">
+            </div>
+        </section>
+
+        <section class="ob pb-[150px] py-[120px]">
+            <h1 class="text-center text-3xl font-bold">Our Blog</h1>
+            <br><br>
+            <div class="obcon flex gap-5 justify-center items-center">
+                <div>
+                    <a href=""><img src="image 19.png" alt="" class="mb-[30px]">
+                    <p class="texts font-[24px]" >8 Alasan Pentingnya Melakukan <br>
+                         Pencadangan Situs Web</p>
+                    </a>
+                </div>
+                <div>
+                    <a href=""><img src="image 20.png" alt="" class="mb-[30px]">
+                    <p class="texts font-[24px]">8 Alasan Pentingnya Melakukan <br>
+                         Pencadangan Situs Web</p>
+                    </a>
+                </div>
+                <div>
+                    <a href=""> <img src="image 21.png" alt="" class="mb-[30px]">
+                    <p class="texts font-[24px]">8 Alasan Pentingnya Melakukan <br>
+                         Pencadangan Situs Web</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="lb w-[100%] h-[234px] bg-gradient-to-r from-cyan-500 to-blue-500">
+            <div class=" pt-[80px] px-[120px]">
+                <h1 class="text-3xl font-bold ">Let's build a website with mangcoding</h1>  <br>
+                <p class="font-light">Mangcoding team will help you in branding your product</p>
+                <a href="" class="button-primary relative left-[1220px] bottom-[60px]">Build Website Now</a>
+            </div>
+            <!-- <a href="" class="button-primary relative left-[80%]">Build Website Now</a> -->
+        </section>
+    </main>
+
+    <footer>
+            <section id="Footer" class="flex container mx-auto py-5 gap-5 justify-center items-center">
+                <div class="flex gap-10 items-center pl-[120px] pr-[120px] pb-[209px]">
+                    <div class="pt-[90px]">
+                        <img src="logolengkap.png" alt="">
+                        <p class="text-left text-[14px] pt-[40px] text-[#969696]">Mangcoding Team Will Help You In Branding Your Product Mangcoding Team Will Help You In Branding Your Product Mangcoding Team Will Help You In Branding Your Product</p>
+                        <ul class="flex gap-x-[24px] pt-[40px]">
+                            <li>
+                                <a><img src="ig.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a><img src="gh.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a><img src="ytb.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a><img src="li.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pl-[24px] pt-[64px]">
+                        <h1 class=" text-[16px] font-bold">Mangcoding</h1>
+                        <ul class="pt-[24px] text-[14px] leading-[24px]">
+                            <li><a href=""> Home</a></li>
+                            <li><a href=""> About</a></li>
+                            <li><a href=""> Services</a></li>
+                            <li><a href=""> Blog</a></li>
+                            <li><a href=""> Work</a></li>
+                            <li><a href=""> Resource</a></li>
+                            <li><a href=""> Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="pl-[40px] pt-[20px]">
+                        <h1 class=" text-[16px] font-bold text-left">Services</h1>
+                        <ul class="pt-[24px] text-[14px] w-[268px] leading-[24px]">
+                            <li><a href=""> Custom WordPress Theme Development
+                            </a></li>
+                            <li><a href=""> Custom Plugin WordPress
+                            </a></li>
+                            <li><a href=""> Custom Shopify Theme Development
+                            </a></li>
+                            <li><a href=""> Custom App for Shopify
+                            </a></li>
+                            <li><a href=""> Web Application</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[16px] text-left pt-[50px]">Services</h1>
+                        <ul class="text-[14px]">
+                            <li class="w-[200px] leading-[16px] pt-[24px]">
+                                <button>
+                                <img src="mail.png" alt=" ">
+                                </button>
+                                <a href="">hello@mangcoding.com</a>
+                            </li>
+                            <li class="w-[173px] leading-[16px] pt-[16px]">
+                                <button>
+                                <img src="call.png" alt=" ">
+                                </button>
+                                <a href="">0266-6532078
+                                    WA:0857-5940-2332</a>
+                            </li>
+                            <li class="w-[246px] leading-[16px] pt-[16px]">
+                                <button>
+                                <img src="loc.png" alt=" ">
+                                </button>
+                                <a href="# ">PT Anugrah Kreasi Digital. karang tengah, Cibadak - Sukabumi</a>
+                            </li>
+                    </div>
+                </div>
+            </section>
+            <div class="item-bottom text-center text-[#969696]">
+                <p>© 2022 Mangcoding. All rights reserved.</p>
+            </div>
+    </footer>
+</body>
+</html>
